@@ -1,0 +1,8 @@
+replicas: 2
+
+configmap:
+  data:
+    FAM_SERVER_URL:  'https://ebs-v80-qa-20-sso.fischeridentitydev.com/auth'
+    FAM_CLIENT_SECRET:  'eRwLbH1Sh9oxJ9QKQWrK1pucY5vJYTlL'
+    FAM_REALM: 'fii'
+    FAM_CLIENT_ID: 'demo'
