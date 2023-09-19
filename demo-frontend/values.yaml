@@ -1,5 +1,5 @@
 appName: frontend
-port: 4000
+port: 80
 
 configmap:
   name: frontend-configmap-v1
