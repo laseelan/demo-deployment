@@ -17,7 +17,7 @@ spec:
         tier: backend
     spec: # Pod spec
       containers:
-      - name: demo-backend-container
+      - name: backendcontainer
         image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
         ports:
         - containerPort: {{ .Values.port }}

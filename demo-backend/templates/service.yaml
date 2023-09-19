@@ -8,7 +8,7 @@ spec:
   ports:
   - port: 80
     protocol: TCP
-    name: demo-backend-port
+    name: backend-port
   selector:
     app: {{ .Values.appName }}
     tier: backend
