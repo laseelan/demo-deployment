@@ -1,4 +1,4 @@
-appName: demo-backend
+appName: backend
 port: 4000
 
 image:
