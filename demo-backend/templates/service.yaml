@@ -7,11 +7,13 @@ metadata:
 spec:
   ports:
   - port: 80
-    NodePort: 30794
+    exter
     targetPort: {{ .Values.port }}
     protocol: TCP
     name: backend-port
   selector:
     app: {{ .Values.appName }}
     tier: backend
-  type: NodePort
+  externalIPs:
+  - 172.25.96.55
+  type: LoadBalancer
