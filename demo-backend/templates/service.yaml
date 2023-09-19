@@ -5,15 +5,14 @@ metadata:
   labels:
     app: {{ .Values.appName }}
 spec:
-  externalIPs:
-  - 172.25.96.55
   ports:
   - port: 80
-    exter
     targetPort: {{ .Values.port }}
     protocol: TCP
     name: backend-port
   selector:
     app: {{ .Values.appName }}
-    tier: backend  
+    tier: backend
+  externalIPs:
+  - 172.25.96.55
   type: LoadBalancer
