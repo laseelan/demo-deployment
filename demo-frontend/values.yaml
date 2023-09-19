@@ -1,0 +1,9 @@
+appName: frontend
+port: 4000
+
+configmap:
+  name: frontend-configmap-v1
+
+image:
+  name: laseelan/demo-frontend
+  tag: 0.0.1
