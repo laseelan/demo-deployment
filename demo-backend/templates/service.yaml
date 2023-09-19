@@ -13,6 +13,4 @@ spec:
   selector:
     app: {{ .Values.appName }}
     tier: backend
-  externalIPs:
-  - 172.25.96.155
   type: LoadBalancer
