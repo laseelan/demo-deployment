@@ -1,6 +1,9 @@
 appName: backend
 port: 4000
 
+configmap:
+  name: backend-configmap-v1
+
 image:
   name: laseelan/demo-backend
   tag: 0.0.1
