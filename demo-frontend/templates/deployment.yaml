@@ -17,7 +17,7 @@ spec:
         tier: frontend
     spec: # Pod spec
       containers:
-      - name: backendcontainer
+      - name: frontendcontainer
         image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
         ports:
         - containerPort: {{ .Values.port }}
