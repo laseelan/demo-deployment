@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.appName }}
+  labels:
+    app: {{ .Values.appName }}
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    name: demo-backend-port
+  selector:
+    app: {{ .Values.appName }}
+    tier: backend
+  type: NodePort

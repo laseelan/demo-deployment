@@ -1,0 +1,9 @@
+kind: ConfigMap 
+apiVersion: v1 
+metadata:
+  name: {{ .Values.configmap.name }}
+data:
+  FAM_SERVER_URL:  {{ .Values.configmap.data.FAM_SERVER_URL }}
+  FAM_CLIENT_SECRET:  {{ .Values.configmap.data.FAM_CLIENT_SECRET }}
+  FAM_REALM: {{ .Values.configmap.data.FAM_REALM }}
+  FAM_CLIENT_ID: {{ .Values.configmap.data.FAM_CLIENT_ID }}
