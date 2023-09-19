@@ -1,0 +1,6 @@
+appName: demo-backend
+port: 4000
+
+image:
+  name: laseelan/demo-backend
+  tag: 0.0.1
