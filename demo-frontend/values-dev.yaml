@@ -2,7 +2,7 @@ replicas: 1
 
 configmap:
   data:
-    FAM_SERVER_URL:  'https://ebs-v80-qa-20-sso.fischeridentitydev.com/auth'
+    FAM_SERVER_URL:  'http://keycloack.localhost'
     FAM_REALM: 'fii'
     FAM_CLIENT_ID: 'demo-angular'
     API_BASE_URL: 'http://172.25.96.151'
